@@ -8,7 +8,7 @@ Altought a few entities and services there are some relevant topics aproach:
 * Database model created with entities;
 * CRUD operations in a real database;
 * Adoption of REST pattern;
-* Unity tests; 
+* Unit tests; 
 * Implantation on Heroku Cloud. 
 
 To run the project on a terminal use this command:
