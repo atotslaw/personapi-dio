@@ -26,6 +26,7 @@ public class PersonController {
 
     private PersonService personService;
 
+    @Autowired
     public PersonController(PersonService personService) {
         this.personService = personService;
     }
@@ -35,4 +36,10 @@ public class PersonController {
     public MessageResponseDTO createPerson(@RequestBody @Valid PersonDTO personDTO) {
         return personService.createPerson(personDTO);
     }
+
+    @GetMapping
+    public List<PersonDTO> listAll() {
+        return personService.listAll();
+    }
+
 }
