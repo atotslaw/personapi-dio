@@ -42,7 +42,7 @@ public class PersonServiceTest {
     private MessageResponseDTO createExpectedMessageResponse(Long id) {
         return MessageResponseDTO
                 .builder()
-                .message("Created person with ID " + id)
+                .message("Created a person with ID " + id)
                 .build();
     }
 }
